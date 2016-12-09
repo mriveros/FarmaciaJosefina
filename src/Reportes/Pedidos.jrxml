@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d9619f5-7758-4804-9f29-944d5e79b08c">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     CompraV."ID_Compra" AS CompraV_ID_Compra,
+     CompraV."No_Factura" AS CompraV_No_Factura,
+     CompraV."Fecha_Compra" AS CompraV_Fecha_Compra,
+     CompraV."Nombres_Empleado" AS CompraV_Nombres_Empleado,
+     CompraV."Apellidos_Empleado" AS CompraV_Apellidos_Empleado,
+     CompraV."Nombre_Proveedor" AS CompraV_Nombre_Proveedor,
+     CompraV."Nombres_Ejecutivo" AS CompraV_Nombres_Ejecutivo,
+     CompraV."Apellidos_Ejecutivo" AS CompraV_Apellidos_Ejecutivo,
+     CompraV."Unids_Totales" AS CompraV_Unids_Totales,
+     CompraV."Total_Comprado" AS CompraV_Total_Comprado,
+     CompraV."ModoCompra" AS CompraV_ModoCompra,
+     CompraV."Tiempo_Pago" AS CompraV_Tiempo_Pago,
+     CompraV."Compra_Cancelada" AS CompraV_Compra_Cancelada,
+     CompraV."Fecha_Ingreso" AS CompraV_Fecha_Ingreso,
+     CompraV."Estado_Compra" AS CompraV_Estado_Compra,
+     DetalleCompraV."ID_DetalleCompra" AS DetalleCompraV_ID_DetalleCompra,
+     DetalleCompraV."ID_Compra" AS DetalleCompraV_ID_Compra,
+     DetalleCompraV."Nombre_Proveedor" AS DetalleCompraV_Nombre_Proveedor,
+     DetalleCompraV."Laboratorio" AS DetalleCompraV_Laboratorio,
+     DetalleCompraV."Nombre_Producto" AS DetalleCompraV_Nombre_Producto,
+     DetalleCompraV."Presentacion" AS DetalleCompraV_Presentacion,
+     DetalleCompraV."UnidsXCaja" AS DetalleCompraV_UnidsXCaja,
+     DetalleCompraV."Tipo_Medicamento" AS DetalleCompraV_Tipo_Medicamento,
+     DetalleCompraV."Contenido" AS DetalleCompraV_Contenido,
+     DetalleCompraV."Fecha_Vencimiento" AS DetalleCompraV_Fecha_Vencimiento,
+     DetalleCompraV."Unidades_Compradas" AS DetalleCompraV_Unidades_Compradas,
+     DetalleCompraV."Costo_Compra" AS DetalleCompraV_Costo_Compra,
+     DetalleCompraV."Descuento" AS DetalleCompraV_Descuento,
+     DetalleCompraV."Incluye_IVA" AS DetalleCompraV_Incluye_IVA,
+     DetalleCompraV."Total_Compra" AS DetalleCompraV_Total_Compra,
+     DetalleCompraV."ModoAdquisicion" AS DetalleCompraV_ModoAdquisicion,
+     DetalleCompraV."Incluye_Vineta" AS DetalleCompraV_Incluye_Vineta,
+     DetalleCompraV."Cantidad_Vineta" AS DetalleCompraV_Cantidad_Vineta,
+     DetalleCompraV."Permite_Devolucion" AS DetalleCompraV_Permite_Devolucion,
+     DetalleCompraV."Porcentaje_Devolucion" AS DetalleCompraV_Porcentaje_Devolucion,
+     DetalleCompraV."Estado_DetCompra" AS DetalleCompraV_Estado_DetCompra
+FROM
+     "dbo"."CompraV" CompraV,
+     "dbo"."DetalleCompraV" DetalleCompraV]]>
+	</queryString>
+	<field name="CompraV_Nombres_Empleado" class="java.lang.String"/>
+	<field name="CompraV_Apellidos_Empleado" class="java.lang.String"/>
+	<field name="CompraV_ModoCompra" class="java.lang.String"/>
+	<field name="DetalleCompraV_Nombre_Producto" class="java.lang.String"/>
+	<field name="DetalleCompraV_Presentacion" class="java.lang.String"/>
+	<field name="DetalleCompraV_Unidades_Compradas" class="java.lang.Integer"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="5f718211-8e5c-487e-a089-485094ca2be2" mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="a924f1a5-3cfb-483b-b570-fd89c344cbd2" x="20" y="20" width="234" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TITLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="a3500f2b-71f5-4800-8a65-b38ff9bebec7" x="395" y="43" width="180" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Add a description here]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement uuid="6644a498-d901-4516-a62f-d7036fff61b5" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="8eee50f6-384f-490c-a34c-dbc050ed297f" mode="Opaque" x="0" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CompraV_Nombres_Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="548b5f76-3a50-4821-9bc6-51ac495065e5" mode="Opaque" x="92" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CompraV_Apellidos_Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="36a7e614-959c-48b7-8689-a40911f4be2a" mode="Opaque" x="184" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CompraV_ModoCompra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b7a9bc05-4b73-465f-a042-def465bfb1d7" mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DetalleCompraV_Nombre_Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="164f6401-d72b-4c23-997d-fded77662ff7" mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DetalleCompraV_Presentacion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a8ace66-d69c-4d56-bd01-f524a5ccdd1e" mode="Opaque" x="460" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DetalleCompraV_Unidades_Compradas]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement uuid="26854b85-58ad-4d93-a1ee-d491cca6bb9f" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="3ea728b5-c36f-446e-80f2-8874bf30d689" x="0" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompraV_Nombres_Empleado}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="cd8f6180-6ad6-4d2c-a41e-3a2abff0caa4" x="92" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompraV_Apellidos_Empleado}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="d5aa5336-1b4b-48a2-a411-b77498b54632" x="184" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompraV_ModoCompra}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="922ac76e-eed1-46f0-93f3-6dd5d10eeee7" x="276" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DetalleCompraV_Nombre_Producto}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="48f5a5aa-2335-44b8-9561-5863f5cfe358" x="368" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DetalleCompraV_Presentacion}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="8cd0e4e7-8343-4c1a-82ca-a53c690e7cdd" x="460" y="0" width="92" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DetalleCompraV_Unidades_Compradas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="fe3d3eee-c547-4790-8517-99a46c24b184" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="12dcfd48-df19-457f-9e79-7798f8659acc" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="58384c7d-c1d8-4229-8065-05eb60ef3f21" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

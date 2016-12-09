@@ -1,0 +1,28 @@
+Ampolla
+Capleta
+Capleta recubierta
+Cápsula
+Comprimido
+Comprimido recubierto
+Crema
+Dispensador
+Gel tópico
+Gel vaginal
+Gotas nasales
+Gotas oftálmicas
+Gotas orales
+Gotas pediátricas
+Jarabe
+Loción
+Óvulo
+Pasta
+Píldora
+Polvo
+Polvo granulado
+Solución
+Solución para nebulizar
+Supositorio
+Tableta
+Tableta recubierta
+Ungüento
+Otros

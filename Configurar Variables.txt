@@ -1,0 +1,3 @@
+Copia y Pega Todas Estas Rutas En Variables de Entorno, en PATH (Tanto en Variables de Usuario, Como de Sistemas):
+
+C:\opencv\build\java;C:\opencv\build\java\x86;C:\opencv\build\java\x64;C:\opencv\build\x64;C:\opencv\build\x86

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f355329b-9f1d-49da-9e18-92c88111bd9d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="ID" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     DetalleCompraV."ID_DetalleCompra" AS DetalleCompraV_ID_DetalleCompra,
+     DetalleCompraV."ID_Compra" AS DetalleCompraV_ID_Compra,
+     DetalleCompraV."Nombre_Proveedor" AS DetalleCompraV_Nombre_Proveedor,
+     DetalleCompraV."Laboratorio" AS DetalleCompraV_Laboratorio,
+     DetalleCompraV."Nombre_Producto" AS DetalleCompraV_Nombre_Producto,
+     DetalleCompraV."Presentacion" AS DetalleCompraV_Presentacion,
+     DetalleCompraV."UnidsXCaja" AS DetalleCompraV_UnidsXCaja,
+     DetalleCompraV."Tipo_Medicamento" AS DetalleCompraV_Tipo_Medicamento,
+     DetalleCompraV."Contenido" AS DetalleCompraV_Contenido,
+     DetalleCompraV."Fecha_Vencimiento" AS DetalleCompraV_Fecha_Vencimiento,
+     DetalleCompraV."Unidades_Compradas" AS DetalleCompraV_Unidades_Compradas,
+     DetalleCompraV."Costo_Compra" AS DetalleCompraV_Costo_Compra,
+     DetalleCompraV."Descuento" AS DetalleCompraV_Descuento,
+     DetalleCompraV."Incluye_IVA" AS DetalleCompraV_Incluye_IVA,
+     DetalleCompraV."Total_Compra" AS DetalleCompraV_Total_Compra,
+     DetalleCompraV."ModoAdquisicion" AS DetalleCompraV_ModoAdquisicion,
+     DetalleCompraV."Incluye_Vineta" AS DetalleCompraV_Incluye_Vineta,
+     DetalleCompraV."Cantidad_Vineta" AS DetalleCompraV_Cantidad_Vineta,
+     DetalleCompraV."Permite_Devolucion" AS DetalleCompraV_Permite_Devolucion,
+     DetalleCompraV."Porcentaje_Devolucion" AS DetalleCompraV_Porcentaje_Devolucion,
+     DetalleCompraV."Estado_DetCompra" AS DetalleCompraV_Estado_DetCompra,
+     CompraV."ID_Compra" AS CompraV_ID_Compra,
+     CompraV."No_Factura" AS CompraV_No_Factura,
+     CompraV."Fecha_Compra" AS CompraV_Fecha_Compra,
+     CompraV."Nombres_Empleado" AS CompraV_Nombres_Empleado,
+     CompraV."Apellidos_Empleado" AS CompraV_Apellidos_Empleado,
+     CompraV."Nombre_Proveedor" AS CompraV_Nombre_Proveedor,
+     CompraV."Nombres_Ejecutivo" AS CompraV_Nombres_Ejecutivo,
+     CompraV."Apellidos_Ejecutivo" AS CompraV_Apellidos_Ejecutivo,
+     CompraV."Unids_Totales" AS CompraV_Unids_Totales,
+     CompraV."Total_Comprado" AS CompraV_Total_Comprado,
+     CompraV."ModoCompra" AS CompraV_ModoCompra,
+     CompraV."Tiempo_Pago" AS CompraV_Tiempo_Pago,
+     CompraV."Compra_Cancelada" AS CompraV_Compra_Cancelada,
+     CompraV."Fecha_Ingreso" AS CompraV_Fecha_Ingreso,
+     CompraV."Estado_Compra" AS CompraV_Estado_Compra
+FROM
+     "dbo"."DetalleCompraV" DetalleCompraV,
+     "dbo"."CompraV" CompraV
+WHERE
+DetalleCompraV."ID_Compra" = $P{ID}]]>
+	</queryString>
+	<field name="DetalleCompraV_ID_DetalleCompra" class="java.lang.Integer"/>
+	<field name="DetalleCompraV_ID_Compra" class="java.lang.Integer"/>
+	<field name="DetalleCompraV_Nombre_Proveedor" class="java.lang.String"/>
+	<field name="DetalleCompraV_Laboratorio" class="java.lang.String"/>
+	<field name="DetalleCompraV_Nombre_Producto" class="java.lang.String"/>
+	<field name="DetalleCompraV_Presentacion" class="java.lang.String"/>
+	<field name="DetalleCompraV_UnidsXCaja" class="java.lang.Integer"/>
+	<field name="DetalleCompraV_Tipo_Medicamento" class="java.lang.String"/>
+	<field name="DetalleCompraV_Contenido" class="java.lang.String"/>
+	<field name="DetalleCompraV_Fecha_Vencimiento" class="java.sql.Date"/>
+	<field name="DetalleCompraV_Unidades_Compradas" class="java.lang.Integer"/>
+	<field name="DetalleCompraV_Costo_Compra" class="java.math.BigDecimal"/>
+	<field name="DetalleCompraV_Descuento" class="java.math.BigDecimal"/>
+	<field name="DetalleCompraV_Incluye_IVA" class="java.lang.String"/>
+	<field name="DetalleCompraV_Total_Compra" class="java.math.BigDecimal"/>
+	<field name="DetalleCompraV_ModoAdquisicion" class="java.lang.String"/>
+	<field name="DetalleCompraV_Incluye_Vineta" class="java.lang.String"/>
+	<field name="DetalleCompraV_Cantidad_Vineta" class="java.math.BigDecimal"/>
+	<field name="DetalleCompraV_Permite_Devolucion" class="java.lang.String"/>
+	<field name="DetalleCompraV_Porcentaje_Devolucion" class="java.lang.Integer"/>
+	<field name="DetalleCompraV_Estado_DetCompra" class="java.lang.String"/>
+	<field name="CompraV_ID_Compra" class="java.lang.Integer"/>
+	<field name="CompraV_No_Factura" class="java.lang.String"/>
+	<field name="CompraV_Fecha_Compra" class="java.sql.Date"/>
+	<field name="CompraV_Nombres_Empleado" class="java.lang.String"/>
+	<field name="CompraV_Apellidos_Empleado" class="java.lang.String"/>
+	<field name="CompraV_Nombre_Proveedor" class="java.lang.String"/>
+	<field name="CompraV_Nombres_Ejecutivo" class="java.lang.String"/>
+	<field name="CompraV_Apellidos_Ejecutivo" class="java.lang.String"/>
+	<field name="CompraV_Unids_Totales" class="java.lang.Integer"/>
+	<field name="CompraV_Total_Comprado" class="java.math.BigDecimal"/>
+	<field name="CompraV_ModoCompra" class="java.lang.String"/>
+	<field name="CompraV_Tiempo_Pago" class="java.lang.Integer"/>
+	<field name="CompraV_Compra_Cancelada" class="java.lang.String"/>
+	<field name="CompraV_Fecha_Ingreso" class="java.sql.Timestamp"/>
+	<field name="CompraV_Estado_Compra" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="1a577d87-5e7a-4bf9-a45b-984e0a4b7b70" mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="e1176020-dcbe-4a2d-8a25-3d710cec995a" x="20" y="20" width="330" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Farmacia Josefina]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="7be71f6b-3bef-4d1b-bd12-b12048bb0c11" x="395" y="43" width="180" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Pedido]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="97">
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="7eaab28c-9584-4457-a5d5-8d993dbf13d1" x="150" y="14" width="163" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompraV_ModoCompra}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2c7a5a5e-7f57-4692-99c3-05c1d9d25060" mode="Opaque" x="13" y="14" width="137" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Modo de pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0d19f9cd-647f-4118-9b4a-a9416747d9c0" mode="Opaque" x="13" y="34" width="137" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empleado]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="44df2f7b-ac65-41c0-a326-f5314c18e989" x="150" y="34" width="163" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CompraV_Nombres_Empleado}.trim()+" "+$F{CompraV_Apellidos_Empleado}.trim()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0d19f9cd-647f-4118-9b4a-a9416747d9c0" mode="Opaque" x="13" y="54" width="137" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="6d7350af-3b4c-4af9-a2e9-ff855c5161d1" x="150" y="54" width="163" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement uuid="bd1640a3-b906-4433-8fb8-5dfa9b6fc2dd" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="5fe8d5b6-8ed1-4a27-9893-b6bc4ce09f1c" mode="Opaque" x="0" y="0" width="187" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Producto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b302feb7-54ad-4854-a68d-4439f34fc32d" mode="Opaque" x="187" y="0" width="188" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Presentacion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="02fe9c97-4e6b-4888-b03a-2487fd41af95" mode="Opaque" x="375" y="0" width="180" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unidades]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement uuid="a79e0a82-38b8-473e-b879-3f9f4596623d" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="d77a5615-4af8-4cee-ba61-f5844f00ef43" x="0" y="0" width="187" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DetalleCompraV_Nombre_Producto}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="2d70c5c9-fc20-464d-babf-575910025bdd" x="187" y="0" width="188" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DetalleCompraV_Presentacion}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="1636ff2b-2841-47d6-8ef8-ac28b0c19d0e" x="375" y="0" width="180" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DetalleCompraV_Unidades_Compradas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="7e587be2-44d2-42c8-bbed-96e067fbb652" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="544ab7ac-5b98-4628-b421-200db84b4e85" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="5edd1183-05a8-41e0-8f68-6bf2bc1f9425" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
